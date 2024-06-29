@@ -1,0 +1,18 @@
+/////
+PRIMARY_INPUTS A B C D E F
+INTERNAL_SIGNALS a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 
+/////
+INV A a1 
+DFF A a2
+AND2 B C D a4 
+INV a4 a5 
+AND2 E a3 a6 
+DFF a3 a9
+INV F a7 
+AND2 a7 a6 a8
+AND2 a9 a8 a5 a10
+DFF a10 a11 
+AND2 D a11 a12 
+DFF a12 a13 
+INV a13 a14 
+AND2 a1 a2 a14 a3
